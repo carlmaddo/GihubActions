@@ -4,9 +4,8 @@ jobs:
   hello-world-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repo code
+      - name: Checkout Repo
         uses: actions/checkout@v3
-      - run: echo "$(cat hello_world.txt)"
       - name: Use Node.js
         uses: actions/setup-node@v3
         with: 
